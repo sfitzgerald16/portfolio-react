@@ -29,6 +29,9 @@ function App() {
           </div>
         </div>
       </nav>
+      <div className='bio has-text-centered'>
+        <p>Full stack web and mobile developer based in Fresno, California. Experienced in developing custom responsive websites and apps using React, Python, Django, JavaScript, HTML, CSS and Bootstrap as well as Social Media content creation and management.</p>
+      </div>
     </div>
   );
 }
