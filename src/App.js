@@ -1,67 +1,31 @@
-import './App.css';
-import 'bulma/css/bulma.min.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import "./App.css";
+import "bulma/css/bulma.min.css";
 
+library.add(fas, fab);
 
 function App() {
   return (
-    <div classname="main">
-      <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="https://bulma.io">
-            <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" />
-          </a>
-
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-start">
-            <a class="navbar-item">
-              Home
+    <div className="main">
+      <nav className="navbar is-dark has-text-white" role="navigation" aria-label="main navigation">
+        <div className="anton is-size-2 is-uppercase p-2 pl-4">Shannon Fitzgerald</div>
+        <div className="navbar-end">
+          <div className="navbar-item">
+            <a href="/" className="button">
+              <FontAwesomeIcon icon={["fas", "house"]} className="has-text-white" size="2x"/>
             </a>
-
-            <a class="navbar-item">
-              Documentation
+            {/* <a href="#" className="button">
+              <FontAwesomeIcon icon={["fas", "address-card"]} className="has-text-white" size="2x"/>
+            </a> */}
+            <a href="https://github.com/sfitzgerald16" className="button" target="_blank" rel="noreferrer">
+              <FontAwesomeIcon icon={["fab", "github"]} className="has-text-white" size="2x"/>
             </a>
-
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link">
-                More
-              </a>
-
-              <div class="navbar-dropdown">
-                <a class="navbar-item">
-                  About
-                </a>
-                <a class="navbar-item">
-                  Jobs
-                </a>
-                <a class="navbar-item">
-                  Contact
-                </a>
-                <hr class="navbar-divider" />
-                  <a class="navbar-item">
-                    Report an issue
-                  </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="buttons">
-                <a class="button is-primary">
-                  <strong>Sign up</strong>
-                </a>
-                <a class="button is-light">
-                  Log in
-                </a>
-              </div>
-            </div>
+            <a href="https://www.linkedin.com/in/shannon-fitzgerald" className="button" target="_blank" rel="noreferrer">
+              <FontAwesomeIcon icon={["fab", "linkedin"]} className="has-text-white" size="2x"/>
+            </a>
           </div>
         </div>
       </nav>
