@@ -21,11 +21,86 @@
   font-family: 'Anton', sans-serif;
 }
 
+.opensans {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.25em;
+}
+
 .bio {
   margin-top: 1em;
   border-top: 1px solid #b5b5b5;
   border-bottom: 1px solid #b5b5b5;
-  font-family: 'Open Sans', sans-serif;
   padding: 1.5em 5em;
-  font-size: 1.25em;
 }
+
+.heading {
+  color: #363636;
+}
+
+.thumbnail,
+a.thumbnail.active,
+a.thumbnail:focus,
+a.thumbnail:hover {
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-decoration: none;
+  position: relative;
+  z-index: 0;
+}
+
+.thumbnail-image-box {
+  padding: 0 0 10px 0;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.overlay {
+  height: 274px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  opacity: .5;
+  border-radius: 5px;
+}
+
+.overlay:hover {
+  background-color: #000000;
+  height: 274px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  opacity: .5;
+  border-radius: 5px;
+}
+
+/* #lost-cats-web {
+  background-image: url('/src/images/lostcatsthumbnail.jpg');
+  background-size: cover;
+}
+
+#pet-store {
+  background-image: url('/src/images/petstorethumb.jpg');
+  background-size: cover;
+}
+
+#paper-hearts-web {
+  background-image: url('/src/images/paperheartsthumbnail.jpg');
+  background-size: cover;
+}
+
+#lost-dogs-facebook {
+  background-image: url('/src/images/lostdogsFBthumbnail.jpg');
+  background-size: cover;
+}
+
+#lost-dogs-instagram {
+  background-image: url('/src/images/lostdogsinstagramthumb.jpg');
+  background-size: cover;
+}
+
+#lost-cats-facebook {
+  background-image: url('/src/images/lostcatsFBthumbnail.jpg');
+  background-size: cover;
+} */
